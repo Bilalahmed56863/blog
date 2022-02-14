@@ -1,0 +1,24 @@
+<!-- send data child to parent
+<h2>Child component</h2>
+<button (click)="sendData()">send data child to parent</button> -->
+<form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+    <label>Name</label>
+    <input type="text" placeholder="enter name" name="user" formControlName="user"><br><br>
+    <label>Email</label>
+    <input type="email" placeholder="enter email" name="email" formControlName="email"><br><br>
+    <!-- <label>Pasword</label>
+    <input type="password" placeholder="enter pasward" name="pasword" formControlName="pasword"><br><br> -->
+    <div formArrayName="pasward">
+
+        <div *ngFor="let pasword of pasword.controls; let i=index">
+            <!-- The repeated alias template -->
+            <label for="pasword-{{ i }}">password{{i}}:</label>
+            <input id="pasword-{{ i }}" type="text" [formControlName]="i">
+        </div>
+        <button type="button" (click)="addAlias()" type="button">+ Add another alias</button>
+
+    </div>
+    <button>Submit</button>
+</form>
+<button>Add</button>
+<button>Remove</button>

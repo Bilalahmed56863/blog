@@ -1,0 +1,90 @@
+<!-- <app-header></app-header>
+<h1>Make header footer in angular</h1> -->
+
+<!-- <h1>You are {{title}} awesome</h1>
+<h1>You are {{name}} awesome</h1> -->
+
+<!-- events -->
+<!-- <button (click)="getName()">Get my name</button><br>
+<button (click)="setData('Kashif')">setname</button> -->
+
+
+<!-- property binding -->
+<!-- <input type="text" [disabled]="disabledBox" [value]="name" />
+<br> <br>
+<input type="text" [disabled]="disabledBox" value={{name}} />
+<br><br>
+<button (click)="enableBox()">Enable textbox</button> -->
+<!-- if else block  -->
+<!-- <h1 *ngIf="show else elseBlock">
+    if Block
+</h1>
+<ng-template #elseBlock>
+    <h1>else block</h1> 
+</ng-template> -->
+
+<!-- Switchcase  -->
+<!-- <div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'Green'">
+        Green Block
+    </h2>
+    <h2 *ngSwitchCase="'Red'">
+        Red Block
+    </h2>
+    <h2 *ngSwitchCase="'Blue'">
+        Blue Block
+    </h2>
+    <h2 *ngSwitchCase="'Black'">
+        Balck Block
+    </h2>
+</div> -->
+<!-- <h4 *ngFor="let item of Data">
+    {{item}}
+</h4> -->
+<!-- <h4 *ngFor="let item of data">   array of object
+    {{item.name}} {{item.age}}
+</h4> -->
+<!-- simple form getdata  -->
+<!-- <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel name="username" placeholder="enter name"><br><br>
+    <input type="text" ngModel name="age" placeholder="enter age"><br><br>
+    <input type="text" ngModel name="address" placeholder="enter address"><br><br>
+    <button>Get user value</button>
+</form> -->
+
+<!-- Bootstrap   -->
+<!-- <p>
+    <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="primary" [value]="75"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="secondary" [value]="50"></ngb-progressbar>
+</p>
+<p>
+    <ngb-progressbar type="dark" [value]="25"></ngb-progressbar>
+</p> -->
+
+<!-- send data child to parent  -->
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
+<!-- 
+               Reactive Form / validation  -->
+<!-- <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" *ngFor="let">
+    <label>Name:</label>
+    <input type="text" placeholder="username" name="user" formControlName='user'>
+    <label>Pasword:</label>
+    <input type="password" placeholder="pasword" name="pasword" formControlName='pasword'>
+    <button>Submit</button>
+</form> -->
